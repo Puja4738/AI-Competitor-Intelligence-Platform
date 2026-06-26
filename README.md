@@ -8,8 +8,6 @@
 ![Groq](https://img.shields.io/badge/Groq-AI-green)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38BDF8)
 
----
-
 # 📖 Overview
 
 The **Nexus Competitor Intelligence Platform** is an AI-powered web application designed to help founders, entrepreneurs, startups, and product managers quickly analyze a startup idea and gain comprehensive competitive intelligence.
@@ -30,8 +28,6 @@ The application automatically analyzes:
 * Market landscape
 
 All results are displayed through a modern dashboard with multiple dedicated pages and can be exported as **PDF** or **CSV** reports.
-
----
 
 # 🎯 Problem Statement
 
@@ -57,8 +53,6 @@ Traditional competitor research requires visiting numerous websites such as:
 This process is slow, repetitive, and difficult to summarize into meaningful business insights.
 
 The Nexus Competitor Intelligence Platform automates this entire workflow using AI.
-
----
 
 # 💡 Solution
 
@@ -86,8 +80,6 @@ The user receives:
 * Source References
 * Market Overview
 
----
-
 # ✨ Key Features
 
 ## 📊 Founder Dashboard
@@ -99,8 +91,6 @@ Provides a high-level overview including:
 * Top Lead
 * Growth Potential
 * Build Next Recommendation
-
----
 
 ## 🏢 Competitor Analysis
 
@@ -116,8 +106,6 @@ Displays:
 
 Helping founders understand the competitive landscape.
 
----
-
 ## 🎯 Lead Generation
 
 Generates potential business leads with:
@@ -127,8 +115,6 @@ Generates potential business leads with:
 * Contact Priority
 * Opportunity Score
 * Decision Makers
-
----
 
 ## 📈 Feature Gap Analysis
 
@@ -144,8 +130,6 @@ Examples include:
 
 This helps founders prioritize future product development.
 
----
-
 ## 💼 Recommendation Engine
 
 AI generates strategic business recommendations including:
@@ -155,8 +139,6 @@ AI generates strategic business recommendations including:
 * Growth Opportunities
 * Marketing Suggestions
 * Platform Expansion
-
----
 
 ## 🤝 Sales Recommendations
 
@@ -180,8 +162,6 @@ Generates valuable sales intelligence including:
 
 This helps startups prioritize outreach.
 
----
-
 ## 📦 Product Recommendations
 
 AI recommends:
@@ -191,8 +171,6 @@ AI recommends:
 * Product Enhancements
 * Customer Experience Improvements
 * Platform Integrations
-
----
 
 ## 🌍 Market Recommendations
 
@@ -205,8 +183,6 @@ Generates:
 * Market Risks
 
 Helping businesses make strategic decisions.
-
----
 
 ## 🔍 Explainability
 
@@ -221,8 +197,6 @@ Every AI-generated insight includes:
 
 This improves trust and transparency.
 
----
-
 ## 📚 Source References
 
 Displays trusted industry sources used during AI reasoning.
@@ -235,8 +209,6 @@ Examples include:
 * SimilarWeb
 * G2
 
----
-
 ## 📈 Market Landscape Overview
 
 Provides:
@@ -248,8 +220,6 @@ Provides:
 
 Giving founders a quick snapshot of the industry.
 
----
-
 ## 📄 Export Features
 
 Users can export complete analysis as:
@@ -258,8 +228,6 @@ Users can export complete analysis as:
 * CSV Report
 
 making it easy to share results with stakeholders.
-
----
 
 # 🖥️ Technology Stack
 
@@ -271,39 +239,27 @@ making it easy to share results with stakeholders.
 * Tailwind CSS
 * Context API
 
----
-
 ## Backend
 
 * Next.js API Routes
 * Groq AI API
-
----
-
+* 
 ## AI Model
 
 * Llama 3.3 70B Versatile
-
----
 
 ## State Management
 
 * React Context API
 
----
-
 ## Styling
 
 * Tailwind CSS
-
----
 
 ## Export Libraries
 
 * html2canvas
 * jsPDF
-
----
 
 ## Development Tools
 
@@ -312,11 +268,8 @@ making it easy to share results with stakeholders.
 * Git
 * GitHub
 
----
-
 # 📂 Project Structure
 
-```text
 nexus-ai-assignment
 │
 ├── app
@@ -350,7 +303,7 @@ nexus-ai-assignment
 │   ├── ExplainabilityPanel.tsx
 │   ├── SourceReferences.tsx
 │   ├── MarketOverview.tsx
-│   └── ...
+│   └── Navbar.tsx
 │
 ├── services
 ├── utils
@@ -360,13 +313,11 @@ nexus-ai-assignment
 ├── .env.local
 ├── package.json
 └── README.md
-```
 
 # 🏗️ System Architecture
 
 The Nexus Competitor Intelligence Platform follows a modern client-server architecture using **Next.js App Router**, **React Context API**, and **Groq AI** for intelligent competitor analysis.
 
-```text
                            User
                              │
                              ▼
@@ -399,15 +350,11 @@ The Nexus Competitor Intelligence Platform follows a modern client-server archit
                       Source References
                              ▼
                      Export PDF / CSV
-```
-
----
 
 # 🧩 Frontend Architecture
 
 The frontend is built using reusable React components and follows a modular architecture.
 
-```text
 layout.tsx
 │
 ├── Navbar
@@ -427,11 +374,9 @@ page.tsx
 ├── ExplainabilityPanel
 ├── SourceReferences
 └── MarketOverview
-```
 
 Each component is responsible for rendering one specific section of the application while sharing data through the React Context API.
 
----
 
 # 🤖 AI Analysis Workflow
 
@@ -447,7 +392,6 @@ The application uses Groq's **Llama 3.3 70B Versatile** model to generate struct
 6. JSON is stored in Analysis Context.
 7. All components automatically re-render with new data.
 
-```text
 User Input
      │
      ▼
@@ -470,13 +414,9 @@ Context API
      │
      ▼
 Dashboard Components
-```
-
----
 
 # 🔄 Application Workflow
 
-```text
 User
  │
  ▼
@@ -511,9 +451,6 @@ Analysis Context
  │
  ▼
 Export PDF / CSV
-```
-
----
 
 # 🧠 React Context API
 
@@ -526,7 +463,6 @@ Instead of passing data through multiple levels of components, the application u
 * Eliminates prop drilling
 * Automatically updates UI after analysis
 
-```typescript
 AnalysisContext
 
 ↓
@@ -540,29 +476,23 @@ setAnalysisData()
 ↓
 
 All Components
-```
 
----
 
 # 📡 API Documentation
 
 ## Endpoint
 
-```http
+http
 POST /api/analyze
-```
 
 ### Request
 
-```json
 {
   "idea": "AI Resume Builder"
 }
-```
 
 ### Response
 
-```json
 {
   "dashboard": {},
   "competitors": [],
@@ -576,13 +506,9 @@ POST /api/analyze
   "sources": [],
   "marketOverview": {}
 }
-```
-
----
 
 # 📂 Data Flow
 
-```text
 SearchForm
       │
       ▼
@@ -605,16 +531,13 @@ AnalysisContext
       ├── Explainability
       ├── Sources
       └── Market Overview
-```
-
----
 
 # ⚙️ Installation
 
 Clone the repository.
 
 ```bash
-git clone https://github.com/your-username/nexus-ai-assignment.git
+git clone https://github.com/Puja4738/AI-Competitor-Intelligence-Platform.git
 ```
 
 Navigate into the project.
@@ -636,10 +559,8 @@ npm install
 Create a `.env.local` file in the root directory.
 
 ```env
-GROQ_API_KEY=your_groq_api_key
-```
+GROQ_API_KEY=your groq api key
 
----
 
 # ▶️ Running the Project
 
@@ -696,31 +617,6 @@ The application includes:
 * Empty state handling
 * Invalid response handling
 * Graceful UI fallbacks
-
----
-
-# 📸 Screenshots
-
-Include screenshots in the following order:
-
-1. Home Page
-2. Founder Dashboard
-3. Competitor Analysis
-4. Lead Generation
-5. Feature Gap Analysis
-6. Recommendations
-7. Explainability
-8. Source References
-9. PDF Export
-10. CSV Export
-
-Store screenshots inside:
-
-```text
-public/screenshots/
-```
-
----
 
 # 🚀 Future Enhancements
 
