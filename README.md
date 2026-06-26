@@ -588,6 +588,12 @@ Run the production build.
 npm start
 ```
 
+Project Deployment link.
+
+```bash
+https://ai-competitor-intelligence-platform.vercel.app/
+```
+
 ---
 
 # 📤 Export Functionality
